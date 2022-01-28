@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/*
+ * @Description:
+ * @Author: Sheep
+ * @Date: 2022-01-18 18:55:06
+ * @LastEditTime: 2022-01-28 15:25:41
+ * @LastEditors: Sheep
+ */
+import React from 'react'
+import 'antd/dist/antd.less'
+import './mock/index'
+import Login from './pages/login/Login'
+import Admin from './layout/Admin'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-function App() {
+const App: React.FC<{}> = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Switch>
+        <Route path="/login" component={Login}></Route>
+        <Route path="/" component={Admin}></Route>
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
