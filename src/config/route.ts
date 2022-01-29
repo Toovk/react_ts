@@ -2,7 +2,7 @@
  * @Description:
  * @Author: Sheep
  * @Date: 2022-01-21 15:36:18
- * @LastEditTime: 2022-01-25 17:54:15
+ * @LastEditTime: 2022-01-29 12:23:11
  * @LastEditors: Sheep
  */
 export interface MenuConfig {

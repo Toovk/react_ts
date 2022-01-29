@@ -13,9 +13,21 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>@toovk</title>
     <link rel="stylesheet" href="%PUBLIC_URL%/css/reset.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/loading.min.css" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="first-loading-wrp">
+        <div class="loading-wrp">
+          <span class="dot dot-spin">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+        </div>
+        <h2>loading...</h2>
+    </div>
   </body>
 </html>
