@@ -2,7 +2,6 @@ const CracoLessPlugin = require('craco-less')
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin')
-
 const isProd = process.env.NODE_ENV === 'production'
 console.log(isProd, process.env.NODE_ENV)
 module.exports = {

@@ -14,9 +14,8 @@ import { Redirect, RouteComponentProps, withRouter } from 'react-router'
 import { RootState } from 'typesafe-actions'
 import { login } from '../../redux/actions'
 import { bindActionCreators } from 'redux'
-import { LoginUser } from '../../utils/_storage'
 import { connect } from 'react-redux'
-import { getToken } from '../../utils/_storage'
+import { LoginUser, getToken } from '../../utils/_storage'
 import CardFooter from '../../layout/components/CardFooter'
 
 type LoginProps = RouteComponentProps &

@@ -2,7 +2,7 @@
  * @Description: 存数据和改变数据方法的reducer
  * @Author: Sheep
  * @Date: 2022-01-20 11:29:27
- * @LastEditTime: 2022-01-25 17:54:20
+ * @LastEditTime: 2022-02-21 22:00:39
  * @LastEditors: Sheep
  */
 import { combineReducers } from 'redux'
@@ -55,7 +55,6 @@ function user(
       logout()
       message.info(`退出成功`)
       return {}
-
     default:
       return state
   }

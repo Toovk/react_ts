@@ -8,14 +8,6 @@ import {
 import { saveUser, LoginUser } from '../utils/_storage'
 import { createAction } from 'typesafe-actions'
 
-/*
- * @Descripttion: 包含多个action creator的函数模块
- * @version:
- * @Author: MFine
- * @Date: 2021-01-27 23:38:20
- * @LastEditors: Sheep
- * @LastEditTime: 2021-02-02 23:48:19
- */
 export const setHeadTitle = createAction(SET_HEAD_TITLE)<any>()
 
 export const receiveUser = createAction(RECEIVE_USER)<LoginUser>()
